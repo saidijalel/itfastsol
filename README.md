@@ -1,20 +1,21 @@
 # ItFastSol
 http://itfastsol.com
 
-UI (CSS): Bootstrap, font-awesome
-https://fortawesome.github.io/Font-Awesome/
-http://getbootstrap.com/
+Front-end:
+Bootstrap: http://getbootstrap.com/
+font-awesome: https://fortawesome.github.io/Font-Awesome/
+Libraries (JavaScript): Jquery
 
+Back-end:
 Language: PHP5
-
-PHP Framework: codeignator
-
-Libraries JS ==> Jquery
+codeigniter (PHP Framework): https://www.codeigniter.com/
 
 Tools:
-IDE (PHPstorm)
-XAMPP Server (Apache2, PHP, MYSQL)
-Versioning (SVC): git, gitgub
+IDE: 
+PHPstorm https://www.jetbrains.com/phpstorm/
+
+XAMPP Server: Apache2, PHP, MYSQL
+Versioning (CVS): git, github
 
 
 
