@@ -3,16 +3,16 @@
   <component name="FrameworkRootSettings" id="Symfony2">
     <option name="typedPaths">
       <list>
-        <element elementPath="$PROJECT_DIR$/sf/app" typeId="app_directory" />
-        <element elementPath="$PROJECT_DIR$/sf/vendor" typeId="vendor_directory" />
-        <element elementPath="$PROJECT_DIR$/sf/web" typeId="web_directory" />
+        <element elementPath="$PROJECT_DIR$/app" typeId="app_directory" />
+        <element elementPath="$PROJECT_DIR$/vendor" typeId="vendor_directory" />
+        <element elementPath="$PROJECT_DIR$/web" typeId="web_directory" />
       </list>
     </option>
     <option name="myTypedPaths">
       <list>
-        <element elementPath="$PROJECT_DIR$/sf/app" typeId="app_directory" />
-        <element elementPath="$PROJECT_DIR$/sf/vendor" typeId="vendor_directory" />
-        <element elementPath="$PROJECT_DIR$/sf/web" typeId="web_directory" />
+        <element elementPath="$PROJECT_DIR$/app" typeId="app_directory" />
+        <element elementPath="$PROJECT_DIR$/vendor" typeId="vendor_directory" />
+        <element elementPath="$PROJECT_DIR$/web" typeId="web_directory" />
       </list>
     </option>
   </component>
