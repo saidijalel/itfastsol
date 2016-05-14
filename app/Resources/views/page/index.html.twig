@@ -2,6 +2,24 @@
 
 {% block body %}
     <h1>Home</h1>
+
+    <ul class="media-list">
+        {% for post in posts %}
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="http://lorempixel.com/100/100/" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"> <a href="{{ path('post_show', { 'id': post.id }) }}">{{ post.title }}</a> </h4>
+                    <p>{{ post.body }}</p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+
+
 {% endblock %}
 
 {% block stylesheets %}

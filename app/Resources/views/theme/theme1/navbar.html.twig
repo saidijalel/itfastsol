@@ -15,6 +15,16 @@
                 <li {% if app.request.get('_route') == 'page_about' %} class="active"{% endif %}><a href="{{ path('page_about') }}"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
                 <li {% if app.request.get('_route') == 'page_contact' %} class="active"{% endif %}><a href="{{ path('page_contact') }}"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rss" aria-hidden="true"></i> Blog <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ path('post_index') }}"><i class="fa fa-list" aria-hidden="true"></i> Article List</a></li>
+                        <li><a href="{{ path('post_new') }}"><i class="fa fa-plus-square" aria-hidden="true"></i> New Article</a></li>
+                    </ul>
+                </li>
+            </ul>
+
         </div><!--/.nav-collapse -->
     </div>
 </nav>

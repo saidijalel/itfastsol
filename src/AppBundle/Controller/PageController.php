@@ -13,7 +13,14 @@ class PageController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('page/index.html.twig');
+
+        $em = $this->getDoctrine()->getManager();
+
+        $posts = $em->getRepository('AppBundle:Post')->findAll();
+
+        return $this->render('page/index.html.twig', array(
+            'posts' => $posts,
+        ));
     }
 
     /**
