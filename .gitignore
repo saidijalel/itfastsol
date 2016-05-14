@@ -7,6 +7,6 @@
 /build/
 /composer.phar
 composer.lock
-web/assets/vendor/
-/vendor
-.idea
+web/assets/vendor/*
+/vendor/*
+.idea/*
