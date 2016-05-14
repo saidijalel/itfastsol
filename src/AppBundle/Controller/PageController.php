@@ -18,8 +18,10 @@ class PageController extends Controller
 
         $posts = $em->getRepository('AppBundle:Post')->findAll();
 
+        $products = $em->getRepository('AppBundle:Product')->findAll();
+
         return $this->render('page/index.html.twig', array(
-            'posts' => $posts,
+            'posts' => $posts, 'products' => $products,
         ));
     }
 
