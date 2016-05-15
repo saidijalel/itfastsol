@@ -1,7 +1,11 @@
 ItFastSolution
 ==============
 
+**Screenshots:** 
 
+![alt text](https://raw.githubusercontent.com/saidijalel/itfastsol/master/web/uploads/screenshots/Screenshot1.png "Screenshot 1")
+
+![alt text](https://raw.githubusercontent.com/saidijalel/itfastsol/master/web/uploads/screenshots/Screenshot2.png "Screenshot 2")
 
 **Run:** 
 
