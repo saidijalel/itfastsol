@@ -1,7 +1,8 @@
 ItFastSolution
 ==============
 
-**Installation:** 
+**Run:** 
+
 cd itfastsol
 composer install
 bower install
@@ -14,18 +15,28 @@ php app/console doctrine:fixtures:load
 Dev: http://localhost/itfastsol/web/app_dev.php/
 Prod: http://localhost/itfastsol/web/
 
-**Requirements:**
-Symfony 2.8
-http://symfony.com/
+**Installation & Requirements:**
+
+MySQL 5
+
+PHP 5.6+
+
+NodeJS
+https://nodejs.org
+
+Git
+https://git-scm.com/
 
 Bower 
 http://bower.io/
+sudo npm install -g bower
 
 Composer
 https://getcomposer.org/
 
-MySQL
-PHP 5.6
+Symfony 2.8
+http://symfony.com/
+
 
 **UI Libs:** 
 twitter bootstrap
