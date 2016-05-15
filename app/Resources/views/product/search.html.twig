@@ -1,0 +1,23 @@
+{% extends 'theme/theme1/layout.html.twig' %}
+
+{% block body %}
+    <h1>Product Search Results</h1>
+
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for product in products %}
+            <tr>
+                <td>{{ product.title }}</td>
+                <td>{% if product.description %}{{ product.description }}{% endif %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
