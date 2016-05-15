@@ -4,6 +4,8 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "font-awesome": "fontawesome#^4.6.3"
+    "font-awesome": "fontawesome#^4.6.3",
+    "flag-icon-css": "^2.2.0",
+    "bootstrap-material-design": "^0.5.9"
   }
 }

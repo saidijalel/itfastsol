@@ -49,6 +49,10 @@ sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
 
 php app/console doctrine:generate:entity --entity=AppBundle:Post --fields="title:string(255) created_at:datetime updated_at:datetime body:text" --no-interaction
 
+purchase : achat
+sale : vente
+
+
 php app/console doctrine:schema:update --dump-sql
 php app/console doctrine:schema:update --force
 
@@ -58,4 +62,4 @@ php app/console doctrine:fixtures:load
 composer require --dev doctrine/doctrine-fixtures-bundle
 $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
 
-
+php app/console generate:doctrine:crud --entity=AppBundle:Sale  --with-write

@@ -6,15 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <!-- Material Design fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-material-design/dist/css/bootstrap-material-design.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-material-design/dist/css/ripples.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/flag-icon-css/css/flag-icon.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
     {% block navbar %}
-        {%  include 'theme/theme1/navbar.html.twig' %}
+        {%  include 'theme/theme1/navbar_material.html.twig' %}
     {% endblock %}
     <div class="container-fluid">
         {% block body %}{% endblock %}
@@ -24,6 +31,14 @@
     {% endblock %}
     <script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+
+    <script src="{{ asset('assets/vendor/bootstrap-material-design/dist/js/ripples.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/bootstrap-material-design/dist/js/material.min.js') }}"></script>
+
+    <script src="{{ asset('assets/js/app.js') }}"></script>
+
+
+
     {% block javascripts %}{% endblock %}
     </body>
 </html>

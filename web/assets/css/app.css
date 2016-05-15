@@ -1,7 +1,12 @@
 body {
     padding-top: 50px;
+    background: url(../img/bg.png) left top repeat #e4e6e5;
 }
 
 .top-buffer {
     margin-top:20px;
+}
+
+.top-padding {
+    margin-top:50px;
 }
