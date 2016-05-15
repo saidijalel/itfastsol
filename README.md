@@ -1,6 +1,20 @@
 ItFastSolution
 ==============
 
+**Installation:** 
+cd itfastsol
+composer install
+bower install
+
+php app/console doctrine:database:drop --force
+php app/console doctrine:database:create
+php app/console doctrine:schema:update --force
+php app/console doctrine:fixtures:load
+
+Dev: http://localhost/itfastsol/web/app_dev.php/
+Prod: http://localhost/itfastsol/web/
+
+**Requirements:**
 Symfony 2.8
 http://symfony.com/
 
@@ -20,13 +34,30 @@ http://getbootstrap.com/
 font-awesome
 http://fontawesome.io/
 
+bootstrap-material-design
+http://fezvrasta.github.io/bootstrap-material-design/
+http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html
+
+flag-icon-css
+http://flag-icon-css.lip.is/
+https://github.com/lipis/flag-icon-css
+
+
 bower install bootstrap -save
 bower install fontawesome -save
 
+   "dependencies": {
+      "bootstrap": "^3.3.6",
+      "font-awesome": "fontawesome#^4.6.3",
+      "flag-icon-css": "^2.2.0",
+      "bootstrap-material-design": "^0.5.9"
+   }
+   
 **JavaScript Libs:**
 
 Jquery
 https://jquery.com/
+
 
 
 **Links:** 

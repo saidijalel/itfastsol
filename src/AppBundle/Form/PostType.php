@@ -31,7 +31,6 @@ class PostType extends AbstractType
     }
 
 
-
     /**
      * @param OptionsResolver $resolver
      */

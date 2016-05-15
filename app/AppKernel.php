@@ -16,6 +16,8 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
+
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(), // KnpPaginatorBundle
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
@@ -25,7 +27,6 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
 
             $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();// DoctrineFixturesBundle
-            $bundles[] = new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(); // KnpPaginatorBundle
         }
 
         return $bundles;
