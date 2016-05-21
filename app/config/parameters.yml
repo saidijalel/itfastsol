@@ -1,11 +1,11 @@
 # This file is auto-generated during the composer install
 # 192.168.99.100 root (docker)
 parameters:
-    database_host: localhost
+    database_host: 192.168.99.100 #localhost
     database_port: null
     database_name: itfastsolution
     database_user: root
-    database_password: null
+    database_password: root #null
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null

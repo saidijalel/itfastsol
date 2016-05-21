@@ -6,16 +6,15 @@
     <div class="panel-heading">{{ 'Sale creation'|trans }}</div>
     <div class="panel-body">
 
-    {{ form_start(form) }}
+        {{ form_start(form, { 'attr': {'class': 'form-horizontal'}}) }}
         {{ form_widget(form) }}
-        <input type="submit" value="Create" />
+        <input type="submit" value="Create" class="btn btn-primary btn-raised" />
+
     {{ form_end(form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('sale_index') }}">Back to the list</a>
-        </li>
-    </ul>
+
+     <p><a href="{{ path('sale_index') }}" class="btn btn-link btn-raised"><i class="fa fa-chevron-left" aria-hidden="true"></i> {{ 'Back to the list'|trans }}</a></p>
+
   </div>
 </div>
 {% endblock %}
