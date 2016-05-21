@@ -1,0 +1,52 @@
+{% extends 'theme/theme1/layout.html.twig' %}
+
+{% block body %}
+
+<div class="panel panel-default top-buffer">
+    <div class="panel-heading">{{ 'Selling Leads'|trans }}</div>
+    <div class="panel-body">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Start_date</th>
+                <th>End_date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for sale in sales %}
+            <tr>
+                <td><a href="{{ path('sale_show', { 'id': sale.id }) }}">{{ sale.id }}</a></td>
+                <td>{{ sale.title }}</td>
+                <td>{{ sale.description }}</td>
+                <td>{% if sale.startdate %}{{ sale.startdate|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if sale.enddate %}{{ sale.enddate|date('Y-m-d') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('sale_show', { 'id': sale.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('sale_edit', { 'id': sale.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('sale_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+
+    </div>
+</div>
+
+{% endblock %}

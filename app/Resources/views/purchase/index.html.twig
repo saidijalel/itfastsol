@@ -1,0 +1,52 @@
+{% extends 'theme/theme1/layout.html.twig' %}
+
+{% block body %}
+
+<div class="panel panel-default top-buffer">
+    <div class="panel-heading">{{ 'Buying Leads'|trans }}</div>
+    <div class="panel-body">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Start_date</th>
+                <th>End_date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for purchase in purchases %}
+            <tr>
+                <td><a href="{{ path('purchase_show', { 'id': purchase.id }) }}">{{ purchase.id }}</a></td>
+                <td>{{ purchase.title }}</td>
+                <td>{{ purchase.description }}</td>
+                <td>{% if purchase.startdate %}{{ purchase.startdate|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if purchase.enddate %}{{ purchase.enddate|date('Y-m-d') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('purchase_show', { 'id': purchase.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('purchase_edit', { 'id': purchase.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('purchase_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+
+    </div>
+</div>
+
+{% endblock %}
